@@ -29,18 +29,6 @@ a { color: inherit; text-decoration: none; }
   outline-offset: 3px;
 }
 
-.skip {
-  position: absolute;
-  left: 12px;
-  top: -40px;
-  background: var(--gold);
-  color: var(--navy);
-  padding: 8px 12px;
-  z-index: 20;
-}
-
-.skip:focus { top: 12px; }
-
 .wrap {
   width: min(1120px, 92%);
   margin: auto;
@@ -66,9 +54,19 @@ header {
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-weight: 800;
   letter-spacing: 1.4px;
   font-size: 20px;
+}
+
+.brand img {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  flex: none;
 }
 
 .brand span {
@@ -91,7 +89,7 @@ nav a:hover { color: #e4c47e; }
   color: var(--white);
   background:
     linear-gradient(110deg, rgba(9, 27, 46, 0.96), rgba(16, 48, 75, 0.83)),
-    url("https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1800&q=85") center/cover;
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/CAT_797_SDB_BHPBilliton_Escondida_Chile_2_HR.jpg?width=1800") center/cover;
   min-height: 510px;
   display: flex;
   align-items: center;
